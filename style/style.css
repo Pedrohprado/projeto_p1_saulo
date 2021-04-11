@@ -1,0 +1,113 @@
+.container-head {
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container-head img {
+    margin-right: 150px;
+    height: 120px;
+}
+
+.atalhos {
+    width: 500px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.atalhos a {
+    padding: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: medium;
+    color: #101010;
+}
+
+.atalhos a:hover {
+    background-color: #0d9674;
+    border-radius: 10px;
+}
+
+/* Criação do banner*/
+
+.banner {
+    height: 100%;
+    width: auto;
+    background-image: linear-gradient(to bottom right, #37eec0, #0d9656);
+    display: flex;
+    justify-content: center;
+    
+}
+
+.clinica-unisagrado {
+    width: 400px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.texto-clinica {
+    width: 600px;
+    height: auto;
+    text-align: justify;
+    margin: 20px 0px 20px 50px;
+}
+
+/*Criação do banner smile*/
+
+.banner-2 {
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.smile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.smile img {
+    height: 300px;
+
+}
+
+.texto-smile{
+    margin-right: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-smile p {
+    margin-bottom: 20px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.texto-smile a {
+    background-color: #0d9674;
+    width: 300px;
+    height: 60px;
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-smile a:hover {
+    background: #0d9656;
+    color: white;
+}

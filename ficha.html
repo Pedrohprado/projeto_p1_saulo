@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linkando Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Linkando CSS -->
+    <link rel="stylesheet" href="style/ficha.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+
+    <title>Ficha de Avaliação</title>
+</head>
+<body>
+    <header style="border-bottom: 1px solid black;">
+        <div class="container-head">
+            <img src="img/logo_unisagrado.png" alt="logo">
+            
+            <div class="atalhos">
+                <a href="index.html">Home</a>
+                <a href="cadastro.html">Cadastro</a>
+                <a href="ficha.html">Ficha de avaliação</a>
+                <a href="prontuario.html">Prontuário</a>
+            </div>
+        </div>
+    </header>
+    
+    <form action="" method="POST" id="formulario" name="formulario">
+        <h2>Questionário de saúde da criança e adulto</h2>
+        <div class="cardstyle">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="nome">
+             <label for="cadastro">Cadastro</label>
+            <input type="number" id="cadastro" name="cadastro">
+        <div class="cardstyle_queixa">
+            <label for="queixaprincipal">Queixa Principal</label>
+            <input type="text" id="queixaprincipal">
+        </div>
+        <div class="cardstyle_queixa">
+            <label for="historico">História da doença atual</label>
+            <input type="text" id="historico">
+        </div>
+        <div class="cardstyle_questions">
+            <p> Já teve hemorragia?</p>
+            <input type="radio" id="sim" name="opcao1" value="sim">
+            <label for="sim">Sim</label>
+            <input type="radio" id="nao" name="opcao1" value="nao">
+            <label for="nao">Não</label>
+        </div>
+
+        <div class="cardstyle_questions">
+            <p>Sofre(u) de alergia?</p>
+            <input type="radio" id="sim" name="opcao2" value="sim">
+            <label for="sim">Sim</label>
+            <input type="radio" id="nao" name="opcao2" value="nao">
+            <label for="nao">Não</label>
+        </div>
+    
+        <div class="cardstyle_questions">
+            <p>Teve reumatismo infeccioso?</p>
+            <input type="radio" id="sim" name="opcao3" value="sim">
+            <label for="sim">Sim</label>
+            <input type="radio" id="nao" name="opcao3" value="nao">
+            <label for="nao">Não</label>
+        </div>
+        <div class="cardstyle_questions">
+            <p>Sofre(u) de distúrbio cardiovascular?</p>
+            <input type="radio" id="sim" name="opcao4" value="sim">
+            <label for="sim">Sim</label>
+            <input type="radio" id="nao" name="opcao4" value="nao">
+            <label for="nao">Não</label>
+        </div>
+         <div class="cardstyle_questions">
+            <p>Sofre(u) de gastrite?</p>
+            <input type="radio" id="sim" name="opcao5" value="sim">
+            <label for="sim">Sim</label>
+            <input type="radio" id="nao" name="opcao5" value="nao">
+            <label for="nao">Não</label>
+        </div>
+        <div class="cardstyle_questions">
+            <p>É diabético ou tem familiares diabéticos? </p>
+            <input type="radio" id="sim" name="opcao6" value="sim">
+            <label for="sim">Sim</label>
+            <input type="radio" id="nao" name="opcao6" value="nao">
+            <label for="nao">Não</label>
+        </div>
+         <div class="cardstyle_questions">
+            <p>Já desmaiou alguma vez? </p>
+            <input type="radio" id="sim" name="opcao7" value="sim">
+            <label for="sim">Sim</label>
+            <input type="radio" id="nao" name="opcao7" value="nao">
+            <label for="nao">Não</label>
+        </div>
+         <div class="cardstyle_questions">
+            <p>Está sob tratamento médico? </p>
+            <input type="radio" id="sim" name="opcao8" value="sim">
+            <label for="sim">Sim</label>
+            <input type="radio" id="nao" name="opcao8" value="nao">
+            <label for="nao">Não</label>
+        </div>
+         <div class="cardstyle_questions">
+            <p>Está tomando algum medicamento? </p>
+            <input type="radio" id="sim" name="opcao9" value="sim">
+            <label for="sim">Sim</label>
+            <input type="radio" id="nao" name="opcao9" value="nao">
+            <label for="nao">Não</label>
+        </div>
+        <div class="cardstyle_questions">
+            <p>Esteve doente ou foi operado nos últimos 5 anos? </p>
+            <input type="radio" id="sim" name="opcao10" value="sim">
+            <label for="sim">Sim</label>
+            <input type="radio" id="nao" name="opcao10" value="nao">
+            <label for="nao">Não</label>
+        </div>
+         <div class="cardstyle_questions">
+            <p>Tem hábitos, vícios ou manias? </p>
+            <input type="radio" id="sim" name="opcao11" value="sim">
+            <label for="sim">Sim</label>
+            <input type="radio" id="nao" name="opcao11" value="nao">
+            <label for="nao">Não</label>
+        </div>
+        <div class="cardstyle_questions">
+            <p>Tem ansiedade/depressão?</p>
+            <input type="radio" id="sim" name="opcao12" value="sim">
+            <label for="sim">Sim</label>
+            <input type="radio" id="nao" name="opcao12" value="nao">
+            <label for="nao">Não</label>
+        </div>
+        <h4>Você e/ou algum familiar  teve algumas dessas doenças?</h4>
+        <hr>
+                <div class="cardstyle_questions">
+                    <p>Tuberculose:</p>
+                    <input type="radio" id="sim" name="opcao13" value="sim">
+                    <label for="sim">Sim</label>
+                    <input type="radio" id="nao" name="opcao13" value="nao">
+                    <label for="nao">Não</label>
+                </div>
+                <div class="cardstyle_questions">
+                    <p>Sífilis:</p>
+                    <input type="radio" id="sim" name="opcao14" value="sim">
+                    <label for="sim">Sim</label>
+                    <input type="radio" id="nao" name="opcao14" value="nao">
+                    <label for="nao">Não</label>
+                </div>
+                <div class="cardstyle_questions">
+                    <p>Hepatite A, B, C:</p>
+                    <input type="radio" id="sim" name="opcao15" value="sim">
+                    <label for="sim">Sim</label>
+                    <input type="radio" id="nao" name="opcao15" value="nao">
+                    <label for="nao">Não</label>
+                </div>
+                <div class="cardstyle_questions">
+                    <p>SIDA/AIDS:</p>
+                    <input type="radio" id="sim" name="opcao16" value="sim">
+                    <label for="sim">Sim</label>
+                    <input type="radio" id="nao" name="opcao16" value="nao">
+                    <label for="nao">Não</label>
+                </div>
+                <div class="cardstyle_questions">
+                    <p>Sarampo:</p>
+                    <input type="radio" id="sim" name="opcao17" value="sim">
+                    <label for="sim">Sim</label>
+                    <input type="radio" id="nao" name="opcao17" value="nao">
+                    <label for="nao">Não</label>
+                </div>
+                <div class="cardstyle_questions">
+                    <p>Caxumba:</p>
+                    <input type="radio" id="sim" name="opcao18" value="sim">
+                    <label for="sim">Sim</label>
+                    <input type="radio" id="nao" name="opcao18" value="nao">
+                    <label for="nao">Não</label>
+                </div>
+                <div class="cardstyle_questions">
+                    <p>Varicela:</p>
+                    <input type="radio" id="sim" name="opcao19" value="sim">
+                    <label for="sim">Sim</label>
+                    <input type="radio" id="nao" name="opcao19" value="nao">
+                    <label for="nao">Não</label>
+                </div>
+                <div class="cardstyle_questions">
+                    <p>É fumante?</p>
+                    <input type="radio" id="sim" name="opcao20" value="sim">
+                    <label for="sim">Sim</label>
+                    <input type="radio" id="nao" name="opcao20" value="nao">
+                    <label for="nao">Não</label>
+                </div>
+        <div class="cardstyle_questions_label">
+            <label for="outras">Outras:</label>
+            <input type="text" id="outras">
+        </div> 
+        <br>
+        <h4>Questionário complementar infantil - ODONTOPEDIATRIA</h4>
+        <hr>
+        <div class="cardstyle_questions">
+            <p>Nasceu de parto:</p>
+            <input type="radio" id="normal" name="opcao21" value="normal">
+            <label for="normal">Normal</label>
+            <input type="radio" id="a fórceps " name="opcao21" value="a fórceps ">
+            <label for="a fórceps ">a fórceps </label>
+            <input type="radio" id="cesariana " name="opcao21" value="cesariana ">
+            <label for="cesariana ">Cesariana </label>
+        </div>
+        <div class="cardstyle_questions">
+            <p>A criança teve algum problema no parto?</p>
+            <input type="radio" id="sim" name="opcao22" value="sim">
+            <label for="sim">Sim</label>
+            <input type="radio" id="nao" name="opcao22" value="nao">
+            <label for="nao">Não</label>
+        </div>
+        <div class="cardstyle_questions">
+            <p>Já lhe foi dito para não tomar anestesia local?</p>
+            <input type="radio" id="sim" name="opcao23" value="sim">
+            <label for="sim">Sim</label>
+            <input type="radio" id="nao" name="opcao23" value="nao">
+            <label for="nao">Não</label>
+        </div>
+        <div class="cardstyle_questions">
+            <p>Já teve ou viveu com alguém que tivesse doença grave e contagiosa?</p>
+            <input type="radio" id="sim" name="opcao24" value="sim">
+            <label for="sim">Sim</label>
+            <input type="radio" id="nao" name="opcao24" value="nao">
+            <label for="nao">Não</label>
+        </div>
+        <div class="cardstyle_questions">
+            <p>A criança já foi vacinada?</p>
+            <input type="radio" id="sim" name="opcao25" value="sim">
+            <label for="sim">Sim</label>
+            <input type="radio" id="nao" name="opcao25" value="nao">
+            <label for="nao">Não</label>
+        </div>
+        <div class="cardstyle_questions">
+            <p>A amamentação foi: </p>
+            <input type="radio" id="natural" name="opcao26" value="natural">
+            <label for="natural">natural</label>
+            <input type="radio" id="mamadeira " name="opcao26" value="mamadeira ">
+            <label for="mamadeira ">mamadeira </label>
+            <label for="idade"><br>Até a idade de:</label>
+            <input type="number" id="idade">
+        </div>
+        <h4>Conduta da Criança</h4>
+        <hr>
+        <div class="cardstyle_questions">
+            <p>Durante os 2 primeiros anos de vida:</p>
+            <input type="radio" id="sentou-se" name="opcao27" value="sentou-se">
+            <label for="sentou-se">sentou-se</label>
+            <input type="radio" id="engatinhou" name="opcao27" value="engatinhou">
+            <label for="engatinhou">engatinhou</label>
+            <input type="radio" id="andou" name="opcao27" value="andou">
+            <label for="andou">andou</label>
+            <input type="radio" id="falou " name="opcao27" value="falou">
+            <label for="falou">falou</label>
+        </div>
+        <div class="cardstyle_questions">
+            <p>No lar e na escola, teve alguma dificuldade no aprendizado?</p>
+            <input type="radio" id="sim" name="opcao28" value="sim">
+            <label for="sim">Sim</label>
+            <input type="radio" id="nao" name="opcao28" value="nao">
+            <label for="nao">Não</label>
+        </div>
+        <div class="cardstyle_questions">
+            <p>Estado anímico:</p>
+            <input type="radio" id="Alegre " name="opcao29" value="Alegre ">
+            <label for="Alegre ">Alegre </label>
+            <input type="radio" id="Triste " name="opcao29" value="Triste ">
+            <label for="Triste ">Triste </label>
+            <input type="radio" id="Tímido " name="opcao29" value="Tímido ">
+            <label for="Tímido ">Tímido </label>
+            <input type="radio" id="Tranquilo  " name="opcao29" value="Tranquilo ">
+            <label for="Tranquilo ">Tranquilo </label>
+            <input type="radio" id="Inquieto" name="opcao29" value="Inquieto">
+            <label for="Inquieto">Inquieto</label>
+            <input type="radio" id="Assustado    " name="opcao29" value="Assustado">
+            <label for="Assustado">Assustado</label>
+        </div>
+        <div class="cardstyle_questions">
+            <p>Tem sono: </p>
+            <input type="radio" id="Tranquilo" name="opcao30" value="Tranquilo">
+            <label for="Tranquilo  ">Tranquilo</label>
+            <input type="radio" id="Intranquilo" name="opcao30" value="Intranquilo">
+            <label for="Intranquilo  ">Intranquilo</label>
+            <input type="radio" id="Terror noturno" name="opcao30" value="Terror noturno">
+            <label for="Terror noturno">Terror noturno </label>
+            <input type="radio" id="Pesadelos" name="opcao30" value="Pesadelos">
+            <label for="Pesadelos ">Pesadelos </label>
+            <input type="radio" id="Sonambulismo" name="opcao30" value="Sonambulismo">
+            <label for="Sonambulismo ">Sonambulismo </label>
+            <input type="radio" id="Insônia" name="opcao30" value="Insônia">
+            <label for="Insônia">Insônia </label>
+        </div>
+        <div class="cardstyle_questions">
+            <p>Conduta psicomotora: </p>
+            <input type="radio" id="Postura normal" name="opcao31" value="Postura normal">
+            <label for="Postura normal">Postura normal</label>
+            <input type="radio" id="Postura alterada" name="opcao31" value="Postura alterada">
+            <label for="Postura alterada">Postura alterada</label>
+            <input type="radio" id="Fonação normal " name="opcao31" value="Fonação normal">
+            <label for="Fonação normal">Fonação normal</label>
+            <input type="radio" id="Distúrbios da fala " name="opcao31" value="Distúrbios da fala">
+            <label for="Distúrbios da fala">Distúrbios da fala</label>
+            <input type="radio" id="Alguma paralisia " name="opcao31" value="Alguma paralisia">
+            <label for="Alguma paralisia">Alguma paralisia</label>
+        </div>
+        <div class="cardstyle_questions">
+            <p>Alimentação:</p>
+            <input type="radio" id="Rejeita" name="opcao32" value="Rejeita ">
+            <label for="Rejeita ">Rejeita </label>
+            <input type="radio" id="Alimenta-se normalmente " name="opcao32" value="Alimenta-se normalmente ">
+            <label for="Alimenta-se normalmente ">Alimenta-se normalmente </label>
+            <input type="radio" id="Supra alimenta-se  " name="opcao32" value="Supra alimenta-se ">
+            <label for="Supra alimenta-se ">Supra alimenta-se </label>
+        </div>
+        <div class="cardstyle_questions">
+            <p>Sociabilidade:</p>
+            <input type="radio" id="Isolada" name="opcao33" value="Isolada">
+            <label for="Isolada">Isolada</label>
+            <input type="radio" id="Agressiva " name="opcao33" value="Agressiva">
+            <label for="Agressiva">Agressiva</label>
+            <input type="radio" id="Relações normais" name="opcao33" value="Relações normais">
+            <label for="Relações normais">Relações normais</label>
+        </div>
+        <div class="cardstyle_questions">
+            <p>Apresenta alguma patologia de conduta:</p>
+            <input type="radio" id="Tiques " name="opcao34" value="Tiques ">
+            <label for="Tiques ">Tiques</label>
+            <input type="radio" id="Fobias " name="opcao34" value="Fobias ">
+            <label for="Fobias ">Fobias </label>
+            <input type="radio" id="Ansiedade " name="opcao34" value="Ansiedade ">
+            <label for="Ansiedade ">Ansiedade </label>
+            <input type="radio" id="Medo " name="opcao34" value="Medo ">
+            <label for="Medo ">Medo </label>
+            <input type="radio" id="Birra " name="opcao34" value="Birra ">
+            <label for="Birra ">Birra </label>
+            <input type="radio" id="Ciúmes " name="opcao34" value="Ciúmes ">
+            <label for="Ciúmes ">Ciúmes </label>
+        </div>
+        <div class="cardstyle_questions_label">
+            <label for="Observações">Observações:</label>
+            <input type="text" id="Observações">
+        </div>
+        <div class="cardstyle">
+            <label for="Aluno(s)">Aluno(s):</label>
+            <input type="text" id="Aluno(s)">
+            <label for="Professor Responsável">Professor Responsável:</label>
+            <input type="text" placeholder="Assinatura e carimbo" id="Professor Responsável">
+        </div>
+        <h4>Exame físico complementar</h4>
+        <hr>
+                <div class="cardstyle_questions">
+                    <p>Lábios</p>
+                    <input type="radio" id="N" name="opcao35" value="N">
+                    <label for="N">N</label>
+                    <input type="radio" id="A" name="opcao35" value="A">
+                    <label for="A">A</label>
+                </div>
+                <div class="cardstyle_questions">
+                    <p>Mucosa Jugal</p>
+                    <input type="radio" id="N" name="opcao36" value="N">
+                    <label for="N">N</label>
+                    <input type="radio" id="A" name="opcao36" value="A">
+                    <label for="A">A</label>
+                </div>
+                <div class="cardstyle_questions">
+                    <p>Soalho da boca</p>
+                    <input type="radio" id="N" name="opcao37" value="N">
+                    <label for="N">N</label>
+                    <input type="radio" id="A" name="opcao37" value="A">
+                    <label for="A">A</label>
+                </div>
+                <div class="cardstyle_questions">
+                    <p>Palato duro</p>
+                    <input type="radio" id="N" name="opcao38" value="N">
+                    <label for="N">N</label>
+                    <input type="radio" id="A" name="opcao38" value="A">
+                    <label for="A">A</label>
+                </div>
+                <div class="cardstyle_questions">
+                    <p>Garganta</p>
+                    <input type="radio" id="N" name="opcao39" value="N">
+                    <label for="N">N</label>
+                    <input type="radio" id="A" name="opcao39" value="A">
+                    <label for="A">A</label>
+                </div>
+                <div class="cardstyle_questions">
+                    <p>Palato mole</p>
+                    <input type="radio" id="N" name="opcao40" value="N">
+                    <label for="N">N</label>
+                    <input type="radio" id="A" name="opcao40" value="A">
+                    <label for="A">A</label>
+                </div>
+                <div class="cardstyle_questions">
+                    <p>Gengivas</p>
+                    <input type="radio" id="N" name="opcao41" value="N">
+                    <label for="N">N</label>
+                    <input type="radio" id="A" name="opcao41" value="A">
+                    <label for="A">A</label>
+                </div>
+                <div class="cardstyle_questions">
+                    <p>Glândulas Salivares</p>
+                    <input type="radio" id="N" name="opcao42" value="N">
+                    <label for="N">N</label>
+                    <input type="radio" id="A" name="opcao42" value="A">
+                    <label for="A">A</label>
+                </div>
+                <div class="cardstyle_questions">
+                    <p>Linfonodos</p>
+                    <input type="radio" id="N" name="opcao43" value="N">
+                    <label for="N">N</label>
+                    <input type="radio" id="A" name="opcao43" value="A">
+                    <label for="A">A</label>
+                </div>
+                <div class="cardstyle_questions">
+                    <p>ATM</p>
+                    <input type="radio" id="N" name="opcao44" value="N">
+                    <label for="N">N</label>
+                    <input type="radio" id="A" name="opcao44" value="A">
+                    <label for="A">A</label>
+                </div>
+                <div class="cardstyle_questions">
+                    <p>Músculos Mastigadores</p>
+                    <input type="radio" id="N" name="opcao45" value="N">
+                    <label for="N">N</label>
+                    <input type="radio" id="A" name="opcao45" value="A">
+                    <label for="A">A</label>
+                </div>
+                <div class="cardstyle_questions">
+                    <p>Oclusão</p>
+                    <input type="radio" id="N" name="opcao46" value="N">
+                    <label for="N">N</label>
+                    <input type="radio" id="A" name="opcao46" value="A">
+                    <label for="A">A</label>
+                </div>
+        <div>
+            <label for="Alterações encontradas">Alterações encontradas:</label>
+            <input type="text" id="Alterações encontradas">
+        </div>
+        <div class="radiu">
+            <p>Pressão Arterial</p>
+            <label for="Máxima">Máxima (mmHG)</label>
+            <input type="number" id="Máxima">
+            <label for="Mínima">Mínima (mmHG)</label>
+            <input type="number" id="Mínima">
+        </div>
+        <div>
+            <label for="Diagnóstico presuntivo">Diagnóstico presuntivo:</label>
+            <input type="text" id="Diagnóstico presuntivo">
+        </div>
+        <div>
+            <label for="Exames complementares">Exames complementares:</label>
+            <input type="text" id="Exames complementares">
+        </div>
+        <div>
+            <label for="Diagnóstico definitivo">Diagnóstico definitivo:</label>
+            <input type="text" id="Diagnóstico definitivo">
+        </div>
+        <div>
+            <label for="Tratamento/Proservação">Tratamento/Proservação:</label>
+            <input type="text" id="Tratamento/Proservação">
+        </div>
+        <div class="doenca">
+            
+        </div>
+        <div>
+            <label for="Plano de Tratamento">Plano de Tratamento:</label>
+            <input type="text" id="Plano de Tratamento">
+        </div>
+        <div>
+            <input type="radio" id="N" name="opcao47" value="N">
+            <label for="N">Atendimento de Urgência (Estágio Sup. em Clínica Odontológica Integrada – URGÊNCIA)</label>
+        </div>
+        <div class="cardstyle_questions">
+            <p>Medicação</p>
+            <input type="radio" id="Sim " name="opcao48" value="Sim ">
+            <label for="Sim ">Sim </label>
+            <input type="radio" id="Não" name="opcao48" value="Não">
+            <label for="Não">Não</label>
+         </div>   
+            <input type="text" id="sim" placeholder="Quais?">
+        <div>
+            <label for="Assinatura">Assinatura do paciente ou responsável:</label>
+            <input type="text" id="Assinatura">
+        </div>
+        <div>
+            <label for="data">data:</label>
+            <input type="date" id="data">
+        </div>
+        <div>
+            <label for="Aluno(s)">Aluno(s):</label>
+            <input type="text" id="Aluno(s)">
+        </div>
+        <div>
+            <label for="Professor Responsável">Professor Responsável:</label>
+            <input type="text" placeholder="Assinatura e carimbo" id="Professor Responsável">
+        </div>
+        
+        <div class="btn-class">
+            <button type="button" class="btn" onclick="validar()">
+                Enviar
+            </button>
+        </div>
+    </form>
+    <script type="text/javascript" src="/assets/validacao_nome.js"></script>
+</body>
+</html>

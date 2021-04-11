@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linkando Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Linkando CSS -->
+    <link rel="stylesheet" href="style/cadastro.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/reset.css">
+
+    <title>Cadastro</title>
+</head>
+<body>
+    <header style="border-bottom: 1px solid black;">
+        <div class="container-head">
+            <img src="img/logo_unisagrado.png" alt="logo">
+            
+            <div class="atalhos">
+                <a href="index.html">Home</a>
+                <a href="cadastro.html">Cadastro</a>
+                <a href="ficha.html">Ficha de avaliação</a>
+                <a href="prontuario.html">Prontuário</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <form action="" method="POST" id="formulario" name="formulario">
+                <div class="container">
+                    <h2>Cadastro de identificação do cliente</h2>
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input required="true" type="text" id="nome" name="nome" width="400px">
+                        <div class="cardstyle">
+                            <label for="data">Data de nascimento</label>
+                            <input type="date" id="data" name="campo">
+                            <label>Sexo: </label>
+                            <input type="radio" id="masculino" name="campo" value="masculino">
+                            <label for="masculino">masculino</label>
+                            <input type="radio" id="feminino" name="campo" value="feminino">
+                            <label for="feminino">feminino</label>
+                        </div>
+                    <div class="cardstyle">
+                        <label for="peso">Peso(KG)</label>
+                        <input type="number" id="peso" name="campo">
+                        <label for="altura">Altura(M)</label>
+                        <input type="number" id="altura" name="campo">
+                    </div>
+                    <div class="cardstyle">
+                        <label for="cor">Cor:</label>
+                        <input type="text" id="cor" name="campo">
+                        <label for="escolaridade">Escolaridade:</label>
+                        <input type="text" id="escolaridade" name="campo">
+                        <label for="profissão">Profissão:</label>
+                        <input type="text" id="profissão" name="campo">
+                    </div>
+                    <div class="cardstyle">
+                        <label for="estadocivil">Estado civil:</label>
+                        <input type="text" id="estadocivil" name="campo">
+                        <label for="cpf">CPF:</label>
+                        <input oninput="mascara(this)" type="text" id="cpf" name="cpf">    <!-- Criando uma validação do CPF do cadastro-->
+                        <label for="rg">RG:</label>
+                        <input type="text" id="rg" name="campo">
+                    </div>
+                    <div class="cardstyle">
+                        <label for="naturalidade">Naturalidade:</label>
+                        <input type="text" id="naturalidade" name="campo">
+                        <label for="estado">Estado:</label>
+                        <input type="text" id="estado" name="campo">
+                    </div>
+                    <br>
+                    <strong>Filiação:</strong>
+                    <div class="cardstyle">
+                        <label for="pai">Pai:</label>
+                        <input type="text" id="pai" name="campo">
+                        <label for="nacionalidade">Nacionalidade:</label>
+                        <input type="text" id="nacionalidade">
+                        <label for="mae">Mãe:</label>
+                        <input type="text" id="mae" name="campo">
+                        <label for="nacionalidade">Nacionalidade:</label>
+                        <input type="text" id="nacionalidade">
+                    </div>
+                    <div class="cardstyle">
+                        <label for="celular">Celular:</label>
+                        <input type="text" placeholder="(00)0000-0000" id="celular">
+                    </div>
+                
+                    <div class="endereco">
+                        <label for="endereco">Endereço:</label>
+                      <input type="text" placeholder="Ex:Rua ..." id="endereco" name="campo">
+                      <label for="numerocasa">Nº:</label>
+                    <input type="text"  id="numerocasa">
+                    </div>
+            
+                    <div class="cardstyle1">
+                        <label for="complemento">Complemento:</label>
+                        <input type="text"  id="complemento">
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" id="bairro"> <br>
+                        <label for="cep">Cep:</label>
+                        <input type="text" placeholder="Ex:00000-000" id="cep" name="campo">
+                        <label for="cidade">Cidade:</label>
+                        <input type="text"  id="cidade">
+                        <label for="estado">Estado:</label>
+                        <input type="text"  id="estado">
+                    </div>
+                    </div>
+                    <div class="botao">
+                    <button type="button" class="btn" onclick="validar()">
+                        Enviar
+                    </button>
+                    <h4>(obrigatório o preenchimento ser realizado pela recepção)</h4>
+                </div>
+        </form>
+    </main>
+
+    <script type="text/javascript" src="/assets/validacao.js"></script>
+    <script type="text/javascript" src="/assets/validacao_nome.js"></script>
+
+</body>
+</html>

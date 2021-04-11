@@ -1,0 +1,105 @@
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form div {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+form p{
+    margin-top: 20px;
+}
+
+form h4{
+    margin-top: 20px;
+}
+
+.radiu {
+    padding: 20px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.doenca {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.doenca1 {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+input {
+    margin: 5px;
+}
+
+.btn {
+    background-color: #0d9674;
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+    margin-top: 20px;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cardstyle{
+    display: inline-block;
+    margin-top: 15;
+}
+
+.cardstyle1{
+    display: inline-block;
+    margin-top: 15;
+}
+
+.cardstyle1 input{
+    margin-left: 35px;
+    margin-top: 15px
+}
+
+
+.endereco{
+    display: inline-block;
+}
+
+.endereco input{
+    width: 600px;
+}
+
+#numerocasa{
+    width: 60px;
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+}
+
+
+.btn:hover {
+    background: #0d9656;
+    color: white;
+}
